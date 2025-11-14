@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="ima/logo.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="fondos.css">
+  <link rel="stylesheet" href="cardss.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="musica.css">
+  <link rel="stylesheet" href="icono.css">
+  <title>Relaxify</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-75">
+    <div class="container">
+      <img src="ima/logo.jpeg" alt="Relaxify Logo" 
+        style="height: 40px; width: auto; margin-right: 10px;">
+      <a class="navbar-brand fw-bold" href="#inicio">RELAXIFY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#relajate">Relájate</a></li>
+          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="btn btn-outline-light ms-2" href="probar-gratis.html">Probar Gratis</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="music-toggle-container">
+    <button id="musicToggleBtn" class="music-btn">🔊</button>
+    <div id="musicMessage" class="music-message hidden"></div>
+  </div>
+
+  <audio id="relaxify-music" loop>
+    <source src="music/Lofi.mp3" type="audio/mpeg">
+  </audio>
+  <script src="musica.js"></script>
+
+  <header class="hero-header text-center my-5 pt-5" id="inicio">
+  <h1 class="header-title fw-bold">RELAXIFY</h1>
+  <p class="header-subtitle fst-italic">Relájate, recarga y vuelve a tu centro</p>
+</header>
+
+<div class="container my-5" id="sobre-relaxify">
+  <div class="card-texto p-4 p-md-5 mx-auto">
+
+    <div class="text-light mb-3 text-center fst-italic" id="relajate">
+      <p>
+        Relaxify es un espacio digital pensado para detener el ruido mental, bajar la tensión interna y recuperar equilibrio emocional en pocos minutos. Funciona como una herramienta suave pero profunda, diseñada para acompañarte con calma, sin presión y sin exigencias.
+      </p>
+      <p>
+        Aquí priorizas tu bienestar, tu ritmo y tu paz. Tú decides cuándo pausar, respirar, soltar y reiniciarte. Solo unos minutos bastan para conectar contigo otra vez, sin importar qué tan pesado, acelerado o saturado haya sido el día.
+      </p>
+    </div>
+
+    <p>
+      Sistema multiplataforma diseñado para ayudarte a reducir el estrés, mejorar tu bienestar emocional y construir hábitos saludables mediante relajación digital adaptativa.
+    </p>
+
+    <p class="text-secondary fst-italic text-center">
+      Sesiones de 3 a 10 minutos · Música terapéutica · IA emocional · Accesible y fácil de usar
+    </p>
+
+    <div class="text-center">
+      <a class="btn btn-outline-light mt-2" href="probar-gratis.html">Probar Gratis</a>
+    </div>
+
+    <hr class="my-4 text-black">
+
+    <h3 class="text-black mb-3" id="que-es">¿Qué es RELAXIFY?</h3>
+    <p>
+      RELAXIFY es una plataforma de bienestar digital que combina música terapéutica, ejercicios guiados, análisis emocional y una inteligencia artificial que personaliza la experiencia de relajación para cada persona.
+    </p>
+    <p>El sistema está compuesto por dos módulos sincronizados:</p>
+
+    <h5 class="text-primary mt-3">Relaxify App (móvil)</h5>
+    <ul>
+      <li>Sesiones guiadas y sonidos relajantes</li>
+      <li>Playlists personalizadas</li>
+      <li>Registro emocional diario</li>
+      <li>Rutinas breves para calmar, enfocar o descansar</li>
+    </ul>
+
+    <h5 class="text-primary mt-3">RelatSafe (web/panel)</h5>
+    <ul>
+      <li>Dashboards anónimos</li>
+      <li>Reportes generales de bienestar</li>
+      <li>Gestión de sesiones y playlists</li>
+    </ul>
+
+    <hr class="my-4 text-black">
+
+    <h3 class="text-black mb-3">¿Cómo funciona?</h3>
+    <ol>
+      <li>El usuario indica cómo se siente.</li>
+      <li>La IA analiza su estado y sugiere una sesión personalizada.</li>
+      <li>El usuario realiza la sesión (3–10 minutos).</li>
+      <li>La app registra cambios y mejora las recomendaciones.</li>
+      <li>El panel RelatSafe sincroniza los datos de forma anónima.</li>
+    </ol>
+    <p><strong>¿La IA diagnostica?</strong> No. Solo acompaña y sugiere experiencias personalizadas de relajación.</p>
+
+    <hr class="my-4 text-black">
+
+    <h3 class="text-black mb-3">¿Qué ofrece la app?</h3>
+    <ul>
+      <li>Sesiones rápidas de relajación</li>
+      <li>Música según tu estado emocional</li>
+      <li>Sonidos ambientales y binaurales</li>
+      <li>Ejercicios de respiración guiada</li>
+      <li>Rutinas para enfoque, descanso o desestrés</li>
+      <li>Registro emocional simple y visual</li>
+      <li>Seguimiento del bienestar</li>
+    </ul>
+    <p><strong>¿Se puede usar sin conexión?</strong> Algunas sesiones estarán disponibles offline.</p>
+
+    <hr class="my-4 text-black">
+
+    <h3 class="text-black mb-3">¿Qué incluye RelatSafe? (Panel Web)</h3>
+    <ul>
+      <li>Análisis general del uso</li>
+      <li>Tendencias emocionales anónimas</li>
+      <li>Gestión de contenido (sesiones, playlists, sonidos)</li>
+      <li>Visualización de progreso colectivo</li>
+      <li>Privacidad garantizada (sin datos personales visibles)</li>
+    </ul>
+    <p><strong>¿Para quién está pensado el panel?</strong> Para administradores del proyecto y futuras instituciones aliadas.</p>
+
+    <hr class="my-4 text-black">
+
+    <h3 class="text-black mb-3">Inteligencia Artificial en RELAXIFY</h3>
+    <p>La IA analiza patrones de uso, respuestas emocionales y preferencias del usuario para recomendar:</p>
+    <ul>
+      <li>Sesiones más efectivas</li>
+      <li>Música o sonidos según tendencia emocional</li>
+      <li>Ritmos de respiración adaptados</li>
+      <li>Recordatorios personalizados</li>
+      <li>Rutinas recomendadas según hora del día</li>
+    </ul>
+    <p class="text-secondary fst-italic">
+      *No sustituye atención profesional<br>
+      *No toma decisiones sobre la salud<br>
+      *Es un acompañante digital de bienestar
+    </p>
+    <p><strong>¿Qué hace la IA realmente?</strong> Aprende de tus hábitos y te recomienda sesiones cada vez más precisas.</p>
+
+    <hr class="my-4 text-black" id="planes">
+
+    <h3 class="text-black mb-3">Planes y niveles</h3>
+
+    <h5 class="text-primary" >Plan Gratuito</h5>
+    <ul>
+      <li>Sonidos básicos</li>
+      <li>Sesiones cortas</li>
+      <li>Registro emocional</li>
+      <li>Rutinas simples</li>
+    </ul>
+
+    <h5 class="text-primary">Plan Premium</h5>
+    <ul>
+      <li>Playlists exclusivas</li>
+      <li>Música adaptativa según IA</li>
+      <li>Sesiones avanzadas</li>
+      <li>Informes personales</li>
+      <li>Rutinas completas de bienestar</li>
+    </ul>
+
+    <h5 class="text-primary">Plan Institucional</h5>
+    <ul>
+      <li>Licencias para universidades o empresas</li>
+      <li>Dashboard avanzado</li>
+      <li>Reportes agregados</li>
+      <li>Soporte técnico</li>
+    </ul>
+
+    <hr class="my-4 text-black" id="nosotros">
+      <h3 class="text-black mb-3">Sobre Nosotros</h3>
+
+      <div class="text-light mb-3 fst-italic">
+        <p>En Relaxify creemos que cada persona merece un espacio donde pueda respirar, detenerse y reencontrarse consigo misma.</p>
+        <p>Creamos experiencias que abrazan tus emociones y te acompañan en los momentos en que más lo necesitas.</p>
+        <p>Nuestro propósito es transformar el estrés cotidiano en calma profunda y bienestar auténtico.</p>
+        <p>Porque cuando cuidas tu mente, transformas tu mundo y todo a tu alrededor empieza a brillar.</p>
+      </div>
+
+    <hr class="my-4 text-black">
+
+    <h3 class="text-black mb-3">Fases del Proyecto</h3>
+    <ul>
+      <li><strong>Fase 1:</strong> Prototipo Universitario</li>
+      <li><strong>Fase 2:</strong> Lanzamiento Público</li>
+      <li><strong>Fase 3:</strong> Institucional</li>
+      <li><strong>Fase 4:</strong> Escalamiento</li>
+    </ul>
+
+    <hr class="my-4 text-black">
+
+    <h3 class="text-black mb-3">Seguridad y Privacidad</h3>
+    <ul>
+      <li>Todos los datos se almacenan de forma segura</li>
+      <li>No se comparten datos personales</li>
+      <li>Información emocional anonimizada</li>
+      <li>El usuario puede eliminar su información</li>
+    </ul>
+
+    <hr class="my-4 text-black" id="contacto">
+
+    <h3 class="text-black mb-3">Contacto</h3>
+    <p>
+      <strong>Email:</strong> 
+      <a href="mailto:portal.relaxify20@gmail.com" style="color: white; text-decoration: none;">portal.relaxify20@gmail.com</a><br>
+      <strong>GitHub:</strong> 
+      <a href="https://github.com/blue-b-noctuno20" target="_blank" style="color: white; text-decoration: none;">https://github.com/blue-b-noctuno20</a><br>
+      <strong>Institución:</strong> Corporación Universitaria Minuto de Dios - UNIMINUTO<br>
+      <strong>Programa:</strong> Ingeniería de Sistemas<br>
+      <strong>Ocupación:</strong> Estudiante Universitario (Pregrado)<br>
+    </p>
+  </div>
+</div>
+
+<section class="container my-5" id="equipo">
+  <h2 class="header-title fw-bold text-center mb-5">EQUIPO DE DESARROLLO</h2>
+
+  <div class="row justify-content-center g-4">
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="custom-card text-center mx-auto">
+        <img src="ima/Camilo.png" alt="Perfil 1">
+        <h5 class="fw-bold text-black mt-3">Jose Camilo Rodriguez Ortegon</h5>
+        <p class="text-black">Diseñador de software</p>
+
+        <div class="contact-icons">
+          <a href="mailto:jose.rodriguez-or@uniminuto.edu.co" class="contact-icon"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:3163472408" class="contact-icon"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="custom-card text-center mx-auto">
+        <img src="ima/Milton.jpeg" alt="Perfil 2">
+        <h5 class="fw-bold text-black mt-3">Milton César Machado Barreto</h5>
+        <p class="text-black">Investigación y contenido</p>
+
+        <div class="contact-icons">
+          <a href="mailto:milton.machado@uniminuto.edu.co" class="contact-icon"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:3227906124" class="contact-icon"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="custom-card text-center mx-auto">
+        <img src="ima/Kevin.jpeg" alt="Perfil 3">
+        <h5 class="fw-bold text-black mt-3">Jhon Kevin Barragán Vásquez</h5>
+        <p class="text-black">Coordinación técnica y arquitectura</p>
+
+        <div class="contact-icons">
+          <a href="mailto:Jhon.barragan@uniminuto.edu.co" class="contact-icon"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:315 7267010" class="contact-icon"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center g-4 mt-3">
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="custom-card text-center mx-auto">
+        <img src="ima/Esteban.jpeg" alt="Perfil 4">
+        <h5 class="fw-bold text-black mt-3">Esteban Morales</h5>
+        <p class="text-black">Asesor área de programación</p>
+
+        <div class="contact-icons">
+          <a href="mailto:esteban.morales.c@uniminuto.edu.co" class="contact-icon"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:318 6374421" class="contact-icon"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="custom-card text-center mx-auto">
+        <img src="ima/Juan Carlos.jpeg" alt="Perfil 5">
+        <h5 class="fw-bold text-black mt-3">Juan Carlos Gonzales</h5>
+        <p class="text-black">Asesor área de documentación</p>
+
+        <div class="contact-icons">
+          <a href="mailto:juan.gonzalez.sa@uniminuto.edu.co" class="contact-icon"><i class="bi bi-envelope-fill"></i></a>
+          <a href="tel:310 3963030" class="contact-icon"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="bubbles">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+</div>
+
+  <footer class="mt-5 py-4 text-center">
+    <div class="card footer-card mx-auto shadow border-0">
+      <div class="card-body d-flex justify-content-center align-items-center flex-wrap gap-3">
+        <img src="ima/Uniminuto.png" alt="Escudo Uniminuto" class="footer-logo me-2">
+        <div class="footer-text text-center">
+          <p class="mb-1 text-secondary">2025 Uniminuto</p>
+          <p class="mb-0 text-secondary">Semillero Quantum | Proyecto de Innovación</p>
+        </div>
+        <img src="ima/ISQUANTUM.png" alt="Escudo Quantum" class="footer-logo ms-2">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

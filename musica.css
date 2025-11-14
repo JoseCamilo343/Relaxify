@@ -1,0 +1,96 @@
+.music-toggle-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* BOTÓN */
+.music-btn {
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+    transform: scale(1.1);
+}
+
+/* MENSAJE */
+.music-message {
+    position: absolute;
+    bottom: 60px;
+    right: 50%;
+    transform: translateX(50%);
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.music-message.show {
+    opacity: 1;
+    transform: translateX(50%) translateY(-5px);
+}
+
+.hidden {
+    display: none;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .music-toggle-container {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .music-btn {
+        padding: 10px 12px;
+        font-size: 18px;
+    }
+
+    .music-message {
+        font-size: 12px;
+        bottom: 50px;
+    }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .music-toggle-container {
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .music-btn {
+        padding: 11px 13px;
+        font-size: 20px;
+    }
+
+    .music-message {
+        font-size: 13px;
+        bottom: 55px;
+    }
+}
+
+/* PC */
+@media (min-width: 1200px) {
+    .music-btn {
+        padding: 14px 18px;
+        font-size: 26px;
+    }
+
+    .music-message {
+        font-size: 15px;
+        bottom: 70px;
+    }
+}

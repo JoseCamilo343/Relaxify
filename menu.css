@@ -1,0 +1,30 @@
+/* Estilos personalizados para el menú */
+    nav.navbar {
+      background-color: #4A90E2; /* Color relajante */
+    }
+    nav.navbar .nav-link {
+      color: #ffffff; /* Contraste alto para accesibilidad */
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    nav.navbar .nav-link:hover {
+      color: #D9EFFF; /* Efecto al pasar el ratón */
+      text-decoration: underline;
+    }
+    nav.navbar .btn-cta {
+      background-color: #FFFFFF;
+      color: #4A90E2;
+      font-weight: bold;
+      border-radius: 20px;
+    }
+    nav.navbar .btn-cta:hover {
+      background-color: #D9EFFF;
+      color: #002F5E;
+    }
+    @media (max-width: 768px) {
+      nav.navbar .nav-link {
+        text-align: center;
+        margin: 5px 0;
+      }
+    }

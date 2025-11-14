@@ -1,0 +1,17 @@
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    color: #6c63ff;
+}
